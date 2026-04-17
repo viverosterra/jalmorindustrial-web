@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.jalmorindustrial.com/sitemap.xml
+
+# Block irrelevant crawling of fragment URLs
+Disallow: /#
