@@ -21,7 +21,7 @@
   <meta property="og:description" content="Especialistas en mantenimiento industrial, pintura epóxica e impermeabilización para naves en Tampico. +200 proyectos. REPSE. Cotiza gratis.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.jalmorindustrial.com">
-  <meta property="og:image" content="/img/corredor-industrial-altamira-nave-jalmor.jpg">
+  <meta property="og:image" content="https://www.jalmorindustrial.com/img/corredor-industrial-altamira-nave-jalmor.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="es_MX">
@@ -30,7 +30,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Mantenimiento Industrial Tampico | JALMOR Industrial">
   <meta name="twitter:description" content="Pintura epóxica, impermeabilización y mantenimiento de naves en Tampico. REPSE. +200 proyectos.">
-  <meta name="twitter:image" content="/img/corredor-industrial-altamira-nave-jalmor.jpg">
+  <meta name="twitter:image" content="https://www.jalmorindustrial.com/img/corredor-industrial-altamira-nave-jalmor.jpg">
   <!-- Mobile -->
   <meta name="theme-color" content="#0A1628">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -157,7 +157,7 @@
     }
 
     /* Scroll reveal */
-    .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; will-change: opacity, transform; }
     .reveal.visible { opacity: 1; transform: translateY(0); }
 
     /* WhatsApp pulse */
@@ -219,6 +219,46 @@
       background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
                         linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
       background-size: 40px 40px;
+    }
+
+    /* ── Motion system (home pilot) — compositor-only, brand-sober ── */
+    /* Hero entrance: staggered, mechanical easing (like machinery settling) */
+    @keyframes heroIn {
+      from { opacity: 0; transform: translateY(26px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .hero-reveal {
+      opacity: 0;
+      animation: heroIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+      animation-delay: var(--d, 0ms);
+      will-change: opacity, transform;
+    }
+
+    /* Hero photo: very slow Ken Burns drift for subtle life */
+    @keyframes kenBurns {
+      from { transform: scale(1.05); }
+      to   { transform: scale(1.11); }
+    }
+    .hero-img { animation: kenBurns 24s ease-out both; will-change: transform; }
+
+    /* Extra vignette to sink the busy right side of the hero photo */
+    .hero-vignette {
+      background:
+        radial-gradient(130% 105% at 12% 42%, transparent 46%, rgba(10,22,40,0.62) 100%),
+        linear-gradient(to top, rgba(10,22,40,0.55), transparent 42%);
+      pointer-events: none;
+    }
+
+    /* Accessibility: honor reduced-motion — disable all non-essential motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+      }
+      .hero-reveal { opacity: 1 !important; transform: none !important; }
+      .hero-img { animation: none !important; transform: scale(1.05); }
     }
   </style>
 </head>
@@ -288,10 +328,11 @@
     <img 
       src="/img/corredor-industrial-altamira-nave-jalmor.jpg" 
       alt="Nave industrial Tampico — equipo JALMOR en obra"
-      class="w-full h-full object-cover object-right opacity-75"
+      class="hero-img w-full h-full object-cover object-right opacity-75"
       loading="eager"
     >
     <div class="absolute inset-0 img-overlay"></div>
+    <div class="absolute inset-0 hero-vignette"></div>
   </div>
   <!-- Subtle metal texture only on left content area -->
   <div class="absolute inset-0 metal-stripe opacity-20"></div>
@@ -309,27 +350,27 @@
   <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-32 lg:py-0">
     <div class="max-w-3xl">
       <!-- Eyebrow tag -->
-      <div class="inline-flex items-center gap-2 bg-brand-accent/10 border border-brand-accent/30 rounded-full px-4 py-1.5 mb-6">
+      <div class="hero-reveal inline-flex items-center gap-2 bg-brand-accent/10 border border-brand-accent/30 rounded-full px-4 py-1.5 mb-6" style="--d:0ms">
         <span class="w-2 h-2 bg-brand-accent rounded-full animate-pulse"></span>
         <span class="text-brand-accent text-xs font-semibold uppercase tracking-widest">Tampico · Madero · Altamira</span>
       </div>
 
       <!-- Main headline -->
-      <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-6 uppercase">
+      <h1 class="hero-reveal font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-6 uppercase" style="--d:120ms">
         Mantenimiento<br>
         <span class="text-brand-accent">Industrial</span><br>
         en <span class="text-brand-accent">Tampico</span> que<br>
         <span class="text-white/80 text-4xl sm:text-5xl lg:text-6xl">No Para tu Operación</span>
       </h1>
 
-      <p class="text-gray-300 text-lg sm:text-xl leading-relaxed mb-10 max-w-2xl font-body">
+      <p class="hero-reveal text-gray-300 text-lg sm:text-xl leading-relaxed mb-10 max-w-2xl font-body" style="--d:260ms">
         Ejecutamos mantenimiento preventivo y correctivo, pintura epóxica e impermeabilización para 
         <strong class="text-white">naves industriales en Tamaulipas</strong> con personal certificado, 
         maquinaria propia y cumplimiento REPSE.
       </p>
 
       <!-- Trust badges row -->
-      <div class="flex flex-wrap gap-3 mb-10">
+      <div class="hero-reveal flex flex-wrap gap-3 mb-10" style="--d:380ms">
         <div class="badge-repse flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold text-brand-accent">
           ✔ REPSE Certificado
         </div>
@@ -345,7 +386,7 @@
       </div>
 
       <!-- CTA buttons -->
-      <div class="flex flex-col sm:flex-row gap-4">
+      <div class="hero-reveal flex flex-col sm:flex-row gap-4" style="--d:500ms">
         <a href="https://wa.me/5218331175985?text=Hola%20JALMOR%2C%20necesito%20cotización%20para%20mi%20nave%20industrial%20en%20Tampico"
            target="_blank"
            class="cta-primary inline-flex items-center justify-center gap-3 text-brand-900 font-bold px-8 py-4 rounded text-lg uppercase tracking-wide">
@@ -364,7 +405,7 @@
       </div>
 
       <!-- Scroll hint -->
-      <div class="mt-16 flex items-center gap-3 text-white/40 text-sm">
+      <div class="hero-reveal mt-16 flex items-center gap-3 text-white/40 text-sm" style="--d:640ms">
         <div class="flex flex-col gap-1">
           <div class="w-6 h-0.5 bg-brand-accent/50 rounded"></div>
           <div class="w-4 h-0.5 bg-brand-accent/30 rounded"></div>
@@ -391,19 +432,19 @@
   <div class="max-w-6xl mx-auto px-4 sm:px-6">
     <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
       <div class="text-center reveal">
-        <div class="stat-num text-5xl font-bold text-brand-accent">200<span class="text-3xl">+</span></div>
+        <div class="stat-num text-5xl font-bold text-brand-accent"><span class="counter" data-count="200">0</span><span class="text-3xl">+</span></div>
         <div class="text-gray-400 text-sm mt-1 font-body">Proyectos Ejecutados</div>
       </div>
       <div class="text-center reveal" style="transition-delay:0.1s">
-        <div class="stat-num text-5xl font-bold text-brand-accent">97<span class="text-3xl">%</span></div>
+        <div class="stat-num text-5xl font-bold text-brand-accent"><span class="counter" data-count="97">0</span><span class="text-3xl">%</span></div>
         <div class="text-gray-400 text-sm mt-1 font-body">Obras a Tiempo</div>
       </div>
       <div class="text-center reveal" style="transition-delay:0.2s">
-        <div class="stat-num text-5xl font-bold text-brand-accent">15<span class="text-3xl">+</span></div>
+        <div class="stat-num text-5xl font-bold text-brand-accent"><span class="counter" data-count="15">0</span><span class="text-3xl">+</span></div>
         <div class="text-gray-400 text-sm mt-1 font-body">Años de Experiencia</div>
       </div>
       <div class="text-center reveal" style="transition-delay:0.3s">
-        <div class="stat-num text-5xl font-bold text-brand-accent">100<span class="text-3xl">%</span></div>
+        <div class="stat-num text-5xl font-bold text-brand-accent"><span class="counter" data-count="100">0</span><span class="text-3xl">%</span></div>
         <div class="text-gray-400 text-sm mt-1 font-body">Satisfacción Garantizada</div>
       </div>
     </div>
@@ -1607,8 +1648,7 @@
     ]
   },
   "numberOfEmployees": {"@type": "QuantitativeValue","value": 20},
-  "slogan": "Mantenimiento Industrial que No Para tu Operación",
-  "aggregateRating": {"@type": "AggregateRating","ratingValue": "4.9","reviewCount": "47"}
+  "slogan": "Mantenimiento Industrial que No Para tu Operación"
 }
 </script>
 
@@ -1783,6 +1823,33 @@
     });
   }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
   document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  // Animated stat counters — count up on first view, honor reduced-motion
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const runCounter = (el) => {
+    const target = parseInt(el.dataset.count, 10) || 0;
+    if (prefersReduced) { el.textContent = target; return; }
+    const duration = 1500;
+    let startTime = null;
+    const tick = (now) => {
+      if (startTime === null) startTime = now;
+      const progress = Math.min((now - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
+      el.textContent = Math.round(target * eased);
+      if (progress < 1) requestAnimationFrame(tick);
+      else el.textContent = target;
+    };
+    requestAnimationFrame(tick);
+  };
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        runCounter(entry.target);
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.4 });
+  document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
 
   // Form submission (Formspree)
   const form = document.getElementById('contact-form');
