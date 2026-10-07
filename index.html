@@ -281,12 +281,12 @@
       </a>
 
       <!-- Desktop Nav -->
-      <div class="hidden md:flex items-center gap-8">
-        <a href="#servicios" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium tracking-wide">Servicios</a>
-        <a href="#proyectos" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium tracking-wide">Proyectos</a>
+      <div class="hidden lg:flex items-center gap-5 xl:gap-8">
+        <a href="#servicios" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium tracking-wide">Mantenimiento</a>
+        <a href="/costa-afuera" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium tracking-wide">Costa Afuera</a>
         <a href="/alimentacion-y-hoteleria" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium tracking-wide">Alimentación y Hotelería</a>
+        <a href="#proyectos" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium tracking-wide">Proyectos</a>
         <a href="/nosotros" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium tracking-wide">Nosotros</a>
-        <a href="#faq" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium tracking-wide">FAQ</a>
         <a href="https://wa.me/5218331175985?text=Hola%20JALMOR%2C%20necesito%20una%20cotización" 
            target="_blank"
            class="cta-primary text-brand-900 font-semibold px-5 py-2 rounded text-sm tracking-wide uppercase">
@@ -295,7 +295,7 @@
       </div>
 
       <!-- Mobile hamburger -->
-      <button id="menu-toggle" class="md:hidden text-white p-2" aria-label="Menú">
+      <button id="menu-toggle" class="lg:hidden text-white p-2" aria-label="Menú">
         <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
@@ -303,11 +303,12 @@
     </div>
 
     <!-- Mobile menu -->
-    <div id="mobile-menu" class="md:hidden overflow-hidden max-h-0">
+    <div id="mobile-menu" class="lg:hidden overflow-hidden max-h-0">
       <div class="pb-4 pt-2 space-y-3 border-t border-white/10">
-        <a href="#servicios" class="block py-2 text-gray-300 hover:text-brand-accent text-sm font-medium" onclick="closeMobileMenu()">Servicios</a>
-        <a href="#proyectos" class="block py-2 text-gray-300 hover:text-brand-accent text-sm font-medium" onclick="closeMobileMenu()">Proyectos</a>
+        <a href="#servicios" class="block py-2 text-gray-300 hover:text-brand-accent text-sm font-medium" onclick="closeMobileMenu()">Mantenimiento</a>
+        <a href="/costa-afuera" class="block py-2 text-gray-300 hover:text-brand-accent text-sm font-medium">Costa Afuera</a>
         <a href="/alimentacion-y-hoteleria" class="block py-2 text-gray-300 hover:text-brand-accent text-sm font-medium">Alimentación y Hotelería</a>
+        <a href="#proyectos" class="block py-2 text-gray-300 hover:text-brand-accent text-sm font-medium" onclick="closeMobileMenu()">Proyectos</a>
         <a href="/nosotros" class="block py-2 text-gray-300 hover:text-brand-accent text-sm font-medium" onclick="closeMobileMenu()">Nosotros</a>
         <a href="#faq" class="block py-2 text-gray-300 hover:text-brand-accent text-sm font-medium" onclick="closeMobileMenu()">FAQ</a>
         <a href="https://wa.me/5218331175985?text=Hola%20JALMOR%2C%20necesito%20una%20cotización" 
@@ -800,6 +801,60 @@
         Solicitar Revisión Técnica Gratis →
       </a>
       <p class="text-gray-500 text-sm mt-3">Sin compromiso · Respuesta en menos de 2 horas</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     COSTA AFUERA — NUEVA LÍNEA
+═══════════════════════════════════════════════════ -->
+<section class="bg-slate-950 py-20 relative overflow-hidden border-t border-brand-accent/20" id="costa-afuera" aria-labelledby="costa-heading">
+  <div class="absolute inset-0 bg-grid opacity-40"></div>
+  <div class="relative max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="grid lg:grid-cols-[1fr_1.4fr] gap-10 items-end mb-12">
+      <div class="reveal">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="accent-bar w-8 h-1 rounded-full"></div>
+          <span class="text-brand-accent text-sm font-semibold uppercase tracking-widest">Offshore · Golfo de México</span>
+        </div>
+        <h2 id="costa-heading" class="font-display text-5xl sm:text-6xl font-bold uppercase text-white leading-[0.95]">
+          Servicios<br><span class="text-brand-accent">Costa Afuera</span>
+        </h2>
+      </div>
+      <p class="text-gray-300 text-lg leading-relaxed reveal" style="transition-delay:0.1s">
+        De la cubierta al lecho marino: buceo industrial e inspección submarina, protección catódica, limpieza de presas de lodo, obras marítimas y mantenimiento de embarcaciones a flote, con base en Tampico–Altamira.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+      <a href="/costa-afuera/buceo-industrial-inspeccion-submarina" class="service-card group bg-brand-800 rounded-2xl p-5 reveal">
+        <div class="font-display text-brand-accent/70 text-sm font-bold tracking-widest mb-3">01</div>
+        <h3 class="font-display text-xl font-bold text-white uppercase mb-2 group-hover:text-brand-accent transition-colors">Buceo e Inspección Submarina</h3>
+        <p class="text-gray-400 text-sm">Plataformas, ductos, muelles y cascos.</p>
+      </a>
+      <a href="/costa-afuera/proteccion-catodica-marina" class="service-card group bg-brand-800 rounded-2xl p-5 reveal" style="transition-delay:0.06s">
+        <div class="font-display text-brand-accent/70 text-sm font-bold tracking-widest mb-3">02</div>
+        <h3 class="font-display text-xl font-bold text-white uppercase mb-2 group-hover:text-brand-accent transition-colors">Protección Catódica Marina</h3>
+        <p class="text-gray-400 text-sm">Ánodos y recubrimientos marinos.</p>
+      </a>
+      <a href="/costa-afuera/limpieza-presas-lodo-embarcaciones" class="service-card group bg-brand-800 rounded-2xl p-5 reveal" style="transition-delay:0.12s">
+        <div class="font-display text-brand-accent/70 text-sm font-bold tracking-widest mb-3">03</div>
+        <h3 class="font-display text-xl font-bold text-white uppercase mb-2 group-hover:text-brand-accent transition-colors">Presas de Lodo y Silos</h3>
+        <p class="text-gray-400 text-sm">Limpieza en embarcaciones de suministro.</p>
+      </a>
+      <a href="/costa-afuera/obras-maritimas-portuarias" class="service-card group bg-brand-800 rounded-2xl p-5 reveal" style="transition-delay:0.18s">
+        <div class="font-display text-brand-accent/70 text-sm font-bold tracking-widest mb-3">04</div>
+        <h3 class="font-display text-xl font-bold text-white uppercase mb-2 group-hover:text-brand-accent transition-colors">Obras Marítimas</h3>
+        <p class="text-gray-400 text-sm">Muelles, defensas y protección costera.</p>
+      </a>
+      <a href="/costa-afuera/mantenimiento-embarcaciones-a-flote" class="service-card group bg-brand-800 rounded-2xl p-5 reveal" style="transition-delay:0.24s">
+        <div class="font-display text-brand-accent/70 text-sm font-bold tracking-widest mb-3">05</div>
+        <h3 class="font-display text-xl font-bold text-white uppercase mb-2 group-hover:text-brand-accent transition-colors">Embarcaciones a Flote</h3>
+        <p class="text-gray-400 text-sm">Casco, propelas y rescate de anclas.</p>
+      </a>
+    </div>
+    <div class="mt-10 reveal">
+      <a href="/costa-afuera" class="cta-secondary inline-flex items-center gap-3 text-white font-semibold px-8 py-4 rounded uppercase tracking-wide">Ver Servicios Costa Afuera →</a>
     </div>
   </div>
 </section>
@@ -1575,6 +1630,7 @@
           <li><a href="/aislamiento-acustico-industrial-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Aislamiento Acústico</a></li>
           <li><a href="/pisos-ceramicos-industriales-altamira" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Pisos Cerámicos</a></li>
           <li><a href="/paquetes-mantenimiento-anual" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Planes Anuales</a></li>
+          <li><a href="/costa-afuera" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Servicios Costa Afuera</a></li>
           <li><a href="/alimentacion-y-hoteleria" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Alimentación y Hotelería</a></li>
         </ul>
       </div>
@@ -1695,6 +1751,11 @@
       {"@type": "Offer","itemOffered": {"@type": "Service","name": "Sistemas Hidrosanitarios Industriales"}},
       {"@type": "Offer","itemOffered": {"@type": "Service","name": "Aislamiento Acústico Industrial"}},
       {"@type": "Offer","itemOffered": {"@type": "Service","name": "Pisos Cerámicos Industriales"}},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Buceo Industrial e Inspección Submarina","url": "https://www.jalmorindustrial.com/costa-afuera/buceo-industrial-inspeccion-submarina"}},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Protección Catódica Marina","url": "https://www.jalmorindustrial.com/costa-afuera/proteccion-catodica-marina"}},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Limpieza de Presas de Lodo y Silos en Embarcaciones","url": "https://www.jalmorindustrial.com/costa-afuera/limpieza-presas-lodo-embarcaciones"}},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Obras Marítimas y Portuarias","url": "https://www.jalmorindustrial.com/costa-afuera/obras-maritimas-portuarias"}},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Mantenimiento de Embarcaciones a Flote","url": "https://www.jalmorindustrial.com/costa-afuera/mantenimiento-embarcaciones-a-flote"}},
       {"@type": "Offer","itemOffered": {"@type": "Service","name": "Comedor Industrial","url": "https://www.jalmorindustrial.com/alimentacion-y-hoteleria/comedor-industrial-tampico"}},
       {"@type": "Offer","itemOffered": {"@type": "Service","name": "Hospedaje para Cuadrillas","url": "https://www.jalmorindustrial.com/alimentacion-y-hoteleria/hospedaje-cuadrillas-altamira"}},
       {"@type": "Offer","itemOffered": {"@type": "Service","name": "Suministro de Despensas para Empresas","url": "https://www.jalmorindustrial.com/alimentacion-y-hoteleria/suministro-despensas-tampico"}}
