@@ -32,7 +32,14 @@
   <!-- Institucional -->
   <url><loc>https://www.jalmorindustrial.com/nosotros</loc><lastmod>2025-04-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
+  <!-- Alimentación y Hotelería -->
+  <url><loc>https://www.jalmorindustrial.com/alimentacion-y-hoteleria</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.jalmorindustrial.com/alimentacion-y-hoteleria/comedor-industrial-tampico</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.jalmorindustrial.com/alimentacion-y-hoteleria/hospedaje-cuadrillas-altamira</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.jalmorindustrial.com/alimentacion-y-hoteleria/suministro-despensas-tampico</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
   <!-- Blog -->
+  <url><loc>https://www.jalmorindustrial.com/blog/que-es-repse-y-por-que-exigirlo</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.jalmorindustrial.com/blog/costo-impermeabilizacion-nave-industrial-tampico</loc><lastmod>2025-04-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
 </urlset>
