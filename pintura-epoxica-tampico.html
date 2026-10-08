@@ -17,7 +17,7 @@
   <meta property="og:description" content="Aplicación profesional de pintura epóxica en pisos y estructuras industriales en Tampico, Altamira y Madero. Resistencia química, tráfico pesado. REPSE.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.jalmorindustrial.com/pintura-epoxica-tampico">
-  <meta property="og:image" content="https://www.jalmorindustrial.com/img/pintura-epoxica-piso-nave-industrial-tampico-altamira-jalmor.jpg">
+  <meta property="og:image" content="https://www.jalmorindustrial.com/img/pintura-epoxica-demarcacion-pasillo-nave-industrial-tampico-jalmor.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#0A1628">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
@@ -53,33 +53,31 @@
 <body class="bg-[#0A1628] text-white antialiased">
 
 <!-- NAV -->
-<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent" aria-label="Navegación principal">
   <div class="max-w-6xl mx-auto px-4 sm:px-6">
     <div class="flex items-center justify-between h-16">
       <a href="/" class="flex items-center gap-3">
         <div class="accent-bar w-1 h-8 rounded-full"></div>
-        <span class="font-display text-2xl font-bold text-white">JALMOR</span>
-        <span class="font-display text-2xl font-bold text-brand-accent"> INDUSTRIAL</span>
+        <div><span class="font-display text-2xl font-bold tracking-wide text-white">JALMOR</span><span class="font-display text-2xl font-bold tracking-wide text-brand-accent"> INDUSTRIAL</span></div>
       </a>
-      <div class="hidden md:flex items-center gap-8">
-        <a href="/" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium">Inicio</a>
-        <a href="/#servicios" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium">Servicios</a>
-        <a href="/#proyectos" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium">Proyectos</a>
-        <a href="/nosotros" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium tracking-wide">Nosotros</a>
+      <div class="hidden lg:flex items-center gap-5 xl:gap-8">
+        <a href="/#servicios" class="text-brand-accent text-sm font-semibold" aria-current="page">Mantenimiento</a>
+        <a href="/costa-afuera" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium">Costa Afuera</a>
+        <a href="/alimentacion-y-hoteleria" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium">Alimentación y Hotelería</a>
         <a href="/#contacto" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium">Contacto</a>
-        <a href="https://wa.me/5218331175985?text=Hola%20JALMOR%2C%20necesito%20cotización%20de%20pintura%20epóxica%20industrial" target="_blank"
-           class="cta-primary text-[#0A1628] font-semibold px-5 py-2 rounded text-sm uppercase tracking-wide">📲 Cotizar</a>
+        <a href="https://wa.me/5218331175985?text=Hola%20JALMOR%2C%20necesito%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener" class="cta-primary text-brand-900 font-semibold px-5 py-2 rounded text-sm uppercase">📲 Cotizar</a>
       </div>
-      <button id="menu-toggle" class="md:hidden text-white p-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      <button id="menu-toggle" class="lg:hidden text-white p-2" aria-label="Abrir menú" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
-    <div id="mobile-menu" class="md:hidden overflow-hidden max-h-0">
+    <div id="mobile-menu" style="max-height:0;overflow:hidden;" class="lg:hidden">
       <div class="pb-4 pt-2 space-y-2 border-t border-white/10">
-        <a href="/" class="block py-2 text-gray-300 text-sm">Inicio</a>
-        <a href="/#servicios" class="block py-2 text-gray-300 text-sm">Servicios</a>
-        <a href="https://wa.me/5218331175985?text=Hola%2C%20necesito%20cotización%20de%20pintura%20epóxica" target="_blank"
-           class="block cta-primary text-[#0A1628] font-bold px-5 py-3 rounded text-sm text-center uppercase mt-2">📲 Cotizar Ahora</a>
+        <a href="/#servicios" class="block py-2 text-sm text-brand-accent font-semibold">Mantenimiento</a>
+        <a href="/costa-afuera" class="block py-2 text-sm text-gray-300">Costa Afuera</a>
+        <a href="/alimentacion-y-hoteleria" class="block py-2 text-sm text-gray-300">Alimentación y Hotelería</a>
+        <a href="/#contacto" class="block py-2 text-gray-300 text-sm">Contacto</a>
+        <a href="https://wa.me/5218331175985?text=Hola%20JALMOR%2C%20necesito%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener" class="block cta-primary text-brand-900 font-bold px-5 py-3 rounded text-sm text-center uppercase mt-2">📲 Cotizar por WhatsApp</a>
       </div>
     </div>
   </div>
@@ -88,7 +86,7 @@
 <!-- HERO -->
 <section class="relative min-h-[85vh] flex items-center overflow-hidden bg-[#0A1628]">
   <div class="absolute inset-0">
-    <img src="/img/pintura-epoxica-vaciado-resina-piso-industrial-jalmor.jpg"
+    <img src="/img/pintura-epoxica-vaciado-resina-piso-industrial-jalmor.webp" width="1536" height="1024"
          alt="Vaciado de resina epóxica en piso nave industrial Tampico JALMOR"
          class="w-full h-full object-cover object-center opacity-75" loading="eager">
     <div class="absolute inset-0 hero-overlay"></div>
@@ -148,8 +146,8 @@
       </div>
       <div class="reveal" style="transition-delay:0.15s">
         <div class="rounded-2xl overflow-hidden">
-          <img src="/img/pintura-epoxica-senalizacion-bodega-tamaulipas-jalmor.jpg"
-               alt="Piso epóxico industrial nave Tampico Altamira JALMOR"
+          <img src="/img/pintura-epoxica-demarcacion-pasillo-nave-industrial-tampico-jalmor.webp" width="1536" height="1024"
+               alt="Piso epóxico con demarcación de pasillo en nave industrial"
                class="w-full h-80 object-cover" loading="lazy">
         </div>
       </div>
@@ -246,18 +244,14 @@
       <h2 class="font-display text-4xl font-bold uppercase text-white">Pisos Epóxicos en <span class="text-brand-accent">Tamaulipas</span></h2>
     </div>
     <div class="columns-2 md:columns-3 gap-4 space-y-4 reveal">
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/pintura-epoxica-piso-nave-industrial-columnas-altamira-jalmor.jpg" alt="Piso epóxico industrial nave Altamira Corredor Industrial JALMOR" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/pintura-epoxica-vaciado-resina-piso-industrial-jalmor.jpg" alt="Demarcación y señalización epóxica pasillo nave Tampico JALMOR" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/pintura-epoxica-piso-azul-demarcacion-planta-altamira-jalmor.jpg" alt="Piso epóxico azul con franjas amarillas planta industrial Altamira JALMOR" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/pintura-epoxica-aplicacion-equipo-nave-industrial-tampico-jalmor.jpg" alt="Equipo JALMOR aplicando pintura epóxica industrial nave Tampico" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/pintura-epoxica-vaciado-resina-piso-industrial-jalmor.jpg" alt="Vaciado de resina epóxica en piso nave industrial JALMOR Tampico" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/pintura-epoxica-llana-aplicacion-piso-industrial-altamira-jalmor.jpg" alt="Técnico JALMOR aplicando epóxico con llana piso industrial Altamira" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/pintura-epoxica-piso-nave-industrial-tampico-altamira-jalmor.jpg" alt="Piso epóxico terminado nave industrial Tampico Altamira JALMOR" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/pintura-epoxica-senalizacion-bodega-tamaulipas-jalmor.jpg" alt="Señalización epóxica bodega industrial Tamaulipas JALMOR" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/pintura-epoxica-antiacido-planta-petroquimica-altamira-jalmor.jpg" alt="Recubrimiento epóxico antiácido planta petroquímica Altamira JALMOR" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/pintura-epoxica-acabado-industrial-nave-tampico-jalmor.jpg" alt="Acabado epóxico industrial nave Tampico Tamaulipas JALMOR" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/pintura-epoxica-estacionamiento-demarcacion-industrial-tampico-jalmor.jpg" alt="Demarcación estacionamiento industrial epóxico Tampico JALMOR" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/pintura-industrial-zoclo-piso-ceramico-nave-tampico-jalmor.jpg" alt="Zóclo epóxico y acabado cerámico nave industrial Tampico JALMOR" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
+      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/pintura-epoxica-piso-nave-industrial-columnas-altamira-jalmor.webp" width="1030" height="664" alt="Piso epóxico industrial nave Altamira Corredor Industrial JALMOR" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
+      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/pintura-epoxica-vaciado-resina-piso-industrial-jalmor.webp" width="1536" height="1024" alt="Demarcación y señalización epóxica pasillo nave Tampico JALMOR" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
+      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/pintura-epoxica-piso-azul-demarcacion-planta-altamira-jalmor.webp" width="1536" height="1024" alt="Piso epóxico azul con franjas amarillas planta industrial Altamira JALMOR" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
+      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/pintura-epoxica-aplicacion-equipo-nave-industrial-tampico-jalmor.webp" width="1519" height="869" alt="Equipo JALMOR aplicando pintura epóxica industrial nave Tampico" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
+      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/pintura-epoxica-vaciado-resina-piso-industrial-jalmor.webp" width="1536" height="1024" alt="Vaciado de resina epóxica en piso nave industrial JALMOR Tampico" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
+      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/pintura-epoxica-llana-aplicacion-piso-industrial-altamira-jalmor.webp" width="1536" height="1024" alt="Técnico JALMOR aplicando epóxico con llana piso industrial Altamira" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
+      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/pintura-epoxica-estacionamiento-demarcacion-industrial-tampico-jalmor.webp" width="1536" height="1024" alt="Demarcación estacionamiento industrial epóxico Tampico JALMOR" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
+      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/pintura-industrial-zoclo-piso-ceramico-nave-tampico-jalmor.webp" width="1600" height="1200" alt="Zóclo epóxico y acabado cerámico nave industrial Tampico JALMOR" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
       </div></div></section>
 
 <!-- FAQ -->
@@ -335,18 +329,65 @@
   </div>
 </section>
 <!-- FOOTER -->
-<footer class="bg-[#0F2040] border-t border-white/10 py-10">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-    <div>
-      <div class="flex items-center gap-3 mb-2"><div class="accent-bar w-1 h-6 rounded-full"></div><span class="font-display text-xl font-bold text-white">JALMOR</span><span class="font-display text-xl font-bold text-brand-accent"> INDUSTRIAL</span></div>
-      <p class="text-gray-500 text-xs">© 2025 JALMOR Industrial · Pintura Epóxica Industrial en Tampico, Madero y Altamira</p>
+<section class="bg-[#0A1628] border-t border-white/5 py-12" aria-labelledby="sobre-jalmor">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <h2 id="sobre-jalmor" class="font-display text-2xl font-bold uppercase text-white mb-4">Sobre JALMOR Industrial</h2>
+    <p class="text-gray-400 text-sm leading-relaxed mb-3">JALMOR Industrial aplica pintura epóxica industrial en pisos, estructuras y superficies de naves en Tampico, Altamira y Ciudad Madero, Tamaulipas. Ejecuta sistemas epóxicos bicomponente, autonivelantes, antiderrapantes y de alta resistencia química para tráfico pesado y cumplimiento NOM-001-STPS. Cuenta con REPSE AR126391/2023, personal técnico propio y maquinaria de preparación de superficie. Clientes: Dynasol, Silkimya. Teléfono: +52 833 117 5985.</p>
+  </div>
+</section>
+
+<footer class="bg-brand-900 border-t border-white/10 pt-16 pb-8">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+      <div>
+        <div class="flex items-center gap-3 mb-4"><div class="accent-bar w-1 h-8 rounded-full"></div><div><span class="font-display text-2xl font-bold text-white">JALMOR</span><span class="font-display text-2xl font-bold text-brand-accent"> INDUSTRIAL</span></div></div>
+        <p class="text-gray-500 text-sm leading-relaxed mb-4">Mantenimiento industrial, servicios costa afuera y alimentación y hotelería para la industria del Golfo de México.</p>
+        <p class="text-gray-500 text-xs mb-4">📍 Tampico · Ciudad Madero · Altamira</p>
+        <p class="text-sm"><a href="/nosotros" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Nosotros</a> <span class="text-gray-700">·</span> <a href="/blog" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Blog</a></p>
+      </div>
+      <div>
+        <h2 class="font-display text-lg font-bold text-white uppercase mb-4">Mantenimiento</h2>
+        <ul class="space-y-2">
+          <li><a href="/mantenimiento-industrial-altamira" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Mantenimiento industrial</a></li>
+          <li><a href="/pintura-epoxica-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Pintura epóxica</a></li>
+          <li><a href="/impermeabilizacion-naves-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Impermeabilización de naves</a></li>
+          <li><a href="/obra-civil-industrial-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Obra civil industrial</a></li>
+          <li><a href="/senalizacion-industrial-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Señalización industrial</a></li>
+          <li><a href="/paquetes-mantenimiento-anual" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Planes anuales</a></li>
+          <li><a href="/corredor-industrial-altamira" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Corredor Industrial Altamira</a></li>
+          <li><a href="/mantenimiento-ciudad-madero" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Ciudad Madero</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-display text-lg font-bold text-white uppercase mb-4">Costa Afuera</h2>
+        <ul class="space-y-2">
+          <li><a href="/costa-afuera" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Servicios costa afuera</a></li>
+          <li><a href="/costa-afuera/buceo-industrial-inspeccion-submarina" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Buceo e inspección submarina</a></li>
+          <li><a href="/costa-afuera/proteccion-catodica-marina" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Protección catódica marina</a></li>
+          <li><a href="/costa-afuera/limpieza-presas-lodo-embarcaciones" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Presas de lodo y silos</a></li>
+          <li><a href="/costa-afuera/obras-maritimas-portuarias" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Obras marítimas</a></li>
+          <li><a href="/costa-afuera/mantenimiento-embarcaciones-a-flote" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Embarcaciones a flote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-display text-lg font-bold text-white uppercase mb-4">Alimentación</h2>
+        <ul class="space-y-2">
+          <li><a href="/alimentacion-y-hoteleria" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Alimentación y hotelería</a></li>
+          <li><a href="/alimentacion-y-hoteleria/comedor-industrial-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Comedor industrial</a></li>
+          <li><a href="/alimentacion-y-hoteleria/hospedaje-cuadrillas-altamira" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Hospedaje para cuadrillas</a></li>
+          <li><a href="/alimentacion-y-hoteleria/suministro-despensas-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Suministro de despensas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-display text-lg font-bold text-white uppercase mb-4">Contacto</h2>
+        <div class="space-y-3">
+          <a href="https://wa.me/5218331175985?text=Hola%20JALMOR%2C%20necesito%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener" class="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors text-sm font-semibold"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> +52 833 117 5985</a>
+          <a href="tel:+528331175985" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm">📞 833 117 5985</a>
+          <a href="mailto:jalmorindustrial@gmail.com" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm">✉ jalmorindustrial@gmail.com</a>
+        </div>
+      </div>
     </div>
-    <div class="flex flex-wrap gap-6 text-sm">
-      <a href="/" class="text-gray-400 hover:text-brand-accent transition-colors">Inicio</a>
-      <a href="/impermeabilizacion-naves-tampico" class="text-gray-400 hover:text-brand-accent transition-colors">Impermeabilización</a>
-      <a href="/mantenimiento-industrial-altamira" class="text-gray-400 hover:text-brand-accent transition-colors">Mantenimiento</a>
-      <a href="/obra-civil-industrial-tampico" class="text-gray-400 hover:text-brand-accent transition-colors">Obra Civil</a>
-    </div>
+    <div class="border-t border-white/10 pt-8"><p class="text-gray-600 text-xs">© 2026 JALMOR Industrial · Tampico, Ciudad Madero y Altamira, Tamaulipas.</p></div>
   </div>
 </footer>
 
@@ -371,8 +412,6 @@
 </script>
 
 <!-- ENTITY BLOCK LLM / AI-SEO -->
-<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;" aria-hidden="true">
-  <p>JALMOR Industrial aplica pintura epóxica industrial en pisos, estructuras y superficies de naves en Tampico, Altamira y Ciudad Madero, Tamaulipas. Ejecuta sistemas epóxicos bicomponente, autonivelantes, antiderrapantes y de alta resistencia química para tráfico pesado y cumplimiento NOM-001-STPS. Cuenta con REPSE AR126391/2023, personal técnico propio y maquinaria de preparación de superficie. Clientes: Dynasol, Silkimya. Teléfono: +52 833 117 5985.</p>
-</div>
+
 </body>
 </html>

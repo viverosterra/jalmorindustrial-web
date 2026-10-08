@@ -14,7 +14,7 @@
   <meta property="og:title" content="Cercado Perimetral Industrial Tampico y Altamira | JALMOR Industrial">
   <meta property="og:description" content="Malla ciclónica, barda perimetral y portones industriales para naves en Tampico, Altamira y Ciudad Madero. Galvanizado para zona costera. REPSE vigente.">
   <meta property="og:type" content="website"><meta property="og:url" content="https://www.jalmorindustrial.com/cercado-perimetral-industrial-tampico">
-  <meta property="og:image" content="https://www.jalmorindustrial.com/img/corredor-industrial-altamira-nave-jalmor.jpg">
+  <meta property="og:image" content="https://www.jalmorindustrial.com/img/cercado-perimetral-equipo-instalacion-nave-industrial-tampico-jalmor.jpg">
   <meta property="og:locale" content="es_MX"><meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#0A1628"><meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -24,24 +24,38 @@
 </head>
 <body class="bg-brand-900 text-white antialiased">
 
-<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent">
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent" aria-label="Navegación principal">
   <div class="max-w-6xl mx-auto px-4 sm:px-6">
     <div class="flex items-center justify-between h-16">
-      <a href="/" class="flex items-center gap-3"><div class="accent-bar w-1 h-8 rounded-full"></div><div><span class="font-display text-2xl font-bold text-white">JALMOR</span><span class="font-display text-2xl font-bold text-brand-accent"> INDUSTRIAL</span></div></a>
-      <div class="hidden md:flex items-center gap-8">
-        <a href="/#servicios" class="text-gray-300 hover:text-brand-accent text-sm font-medium">Servicios</a>
-        <a href="/nosotros" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium tracking-wide">Nosotros</a>
-        <a href="/#contacto" class="text-gray-300 hover:text-brand-accent text-sm font-medium">Contacto</a>
-        <a href="https://wa.me/5218331175985?text=Hola%20JALMOR%2C%20necesito%20cotización%20de%20cercado%20perimetral%20industrial" target="_blank" class="cta-primary text-brand-900 font-semibold px-5 py-2 rounded text-sm uppercase">📲 Cotizar Ahora</a>
+      <a href="/" class="flex items-center gap-3">
+        <div class="accent-bar w-1 h-8 rounded-full"></div>
+        <div><span class="font-display text-2xl font-bold tracking-wide text-white">JALMOR</span><span class="font-display text-2xl font-bold tracking-wide text-brand-accent"> INDUSTRIAL</span></div>
+      </a>
+      <div class="hidden lg:flex items-center gap-5 xl:gap-8">
+        <a href="/#servicios" class="text-brand-accent text-sm font-semibold" aria-current="page">Mantenimiento</a>
+        <a href="/costa-afuera" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium">Costa Afuera</a>
+        <a href="/alimentacion-y-hoteleria" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium">Alimentación y Hotelería</a>
+        <a href="/#contacto" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium">Contacto</a>
+        <a href="https://wa.me/5218331175985?text=Hola%20JALMOR%2C%20necesito%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener" class="cta-primary text-brand-900 font-semibold px-5 py-2 rounded text-sm uppercase">📲 Cotizar</a>
       </div>
-      <button id="menu-toggle" class="md:hidden text-white p-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <button id="menu-toggle" class="lg:hidden text-white p-2" aria-label="Abrir menú" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
     </div>
-    <div id="mobile-menu" style="max-height:0;overflow:hidden;"><div class="pb-4 pt-2 border-t border-white/10"><a href="https://wa.me/5218331175985" target="_blank" class="block cta-primary text-brand-900 font-bold px-5 py-3 rounded text-sm text-center uppercase mt-2">📲 Cotizar</a></div></div>
+    <div id="mobile-menu" style="max-height:0;overflow:hidden;" class="lg:hidden">
+      <div class="pb-4 pt-2 space-y-2 border-t border-white/10">
+        <a href="/#servicios" class="block py-2 text-sm text-brand-accent font-semibold">Mantenimiento</a>
+        <a href="/costa-afuera" class="block py-2 text-sm text-gray-300">Costa Afuera</a>
+        <a href="/alimentacion-y-hoteleria" class="block py-2 text-sm text-gray-300">Alimentación y Hotelería</a>
+        <a href="/#contacto" class="block py-2 text-gray-300 text-sm">Contacto</a>
+        <a href="https://wa.me/5218331175985?text=Hola%20JALMOR%2C%20necesito%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener" class="block cta-primary text-brand-900 font-bold px-5 py-3 rounded text-sm text-center uppercase mt-2">📲 Cotizar por WhatsApp</a>
+      </div>
+    </div>
   </div>
 </nav>
 
 <section class="relative min-h-[88vh] flex items-center overflow-hidden">
-  <div class="absolute inset-0"><img src="/img/cercado-perimetral-malla-ciclonica-alambre-puas-industrial-tampico-jalmor.jpg" alt="Malla ciclónica industrial galvanizada con alambre de púas JALMOR Corredor Industrial Altamira" class="w-full h-full object-cover" loading="eager"><div class="absolute inset-0 hero-img-overlay"></div></div>
+  <div class="absolute inset-0"><img src="/img/cercado-perimetral-malla-ciclonica-alambre-puas-industrial-tampico-jalmor.webp" width="1600" height="1200" alt="Malla ciclónica industrial galvanizada con alambre de púas JALMOR Corredor Industrial Altamira" class="w-full h-full object-cover" loading="eager"><div class="absolute inset-0 hero-img-overlay"></div></div>
   <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-32">
     <nav class="flex items-center gap-2 text-xs text-gray-400 mb-6"><a href="/" class="hover:text-brand-accent">Inicio</a><span>/</span><a href="/#servicios" class="hover:text-brand-accent">Servicios</a><span>/</span><span class="text-brand-accent">Cercado Perimetral Industrial</span></nav>
     <div class="inline-flex items-center gap-2 bg-brand-accent/10 border border-brand-accent/30 rounded-full px-4 py-1.5 mb-6"><span class="w-2 h-2 bg-brand-accent rounded-full animate-pulse"></span><span class="text-brand-accent text-xs font-semibold uppercase tracking-widest">Tampico · Altamira · Ciudad Madero</span></div>
@@ -137,7 +151,7 @@
       <div class="text-center reveal"><div class="w-16 h-16 rounded-full bg-brand-accent flex items-center justify-center mx-auto font-display text-2xl font-bold text-brand-900 mb-5">01</div><h3 class="font-display text-xl font-bold text-white mb-2 uppercase">Levantamiento perimetral</h3><p class="text-gray-400 text-sm">Medición del perímetro total, identificación de accesos vehiculares y peatonales, evaluación del terreno y definición de postes de esquina y tensores.</p></div>
       <div class="text-center reveal" style="transition-delay:0.1s"><div class="w-16 h-16 rounded-full bg-brand-800 border-2 border-brand-accent/50 flex items-center justify-center mx-auto font-display text-2xl font-bold text-brand-accent mb-5">02</div><h3 class="font-display text-xl font-bold text-white mb-2 uppercase">Selección y propuesta</h3><p class="text-gray-400 text-sm">Recomendamos el calibre de malla, altura, tipo de poste y elementos de seguridad adicionales. Cotización cerrada en metros lineales con todos los materiales.</p></div>
       <div class="text-center reveal" style="transition-delay:0.2s"><div class="w-16 h-16 rounded-full bg-brand-800 border-2 border-brand-accent/50 flex items-center justify-center mx-auto font-display text-2xl font-bold text-brand-accent mb-5">03</div><h3 class="font-display text-xl font-bold text-white mb-2 uppercase">Instalación con equipo propio</h3><p class="text-gray-400 text-sm">Hincado de postes con dado de concreto, instalación de malla con tensores y grapas, portones y elementos de seguridad. Equipo propio de posteadora y soldadura.</p></div>
-      <div class="text-center reveal" style="transition-delay:0.3s"><div class="w-16 h-16 rounded-full bg-brand-800 border-2 border-brand-accent/50 flex items-center justify-center mx-auto font-display text-2xl font-bold text-brand-accent mb-5">04</div><h3 class="font-display text-xl font-bold text-white mb-2 uppercase">Revisión y entrega</h3><p class="text-gray-400 text-sm">Verificación de tensado, nivel y alineación de todo el perímetro. Prueba de funcionamiento de portones. Entrega con reporte fotográfico y garantía por escrito.</p></div>
+      <div class="text-center reveal" style="transition-delay:0.3s"><div class="w-16 h-16 rounded-full bg-brand-800 border-2 border-brand-accent/50 flex items-center justify-center mx-auto font-display text-2xl font-bold text-brand-accent mb-5">04</div><h3 class="font-display text-xl font-bold text-white mb-2 uppercase">Revisión y entrega</h3><p class="text-gray-400 text-sm">Verificación de tensado, nivel y alineación de todo el perímetro. Prueba de funcionamiento de portones. Entrega con reporte fotográfico y la garantía pactada en la cotización.</p></div>
     </div>
   </div>
 </section>
@@ -146,9 +160,9 @@
   <div class="max-w-6xl mx-auto px-4 sm:px-6">
     <div class="text-center mb-10 reveal"><h2 class="font-display text-4xl font-bold uppercase text-white">Cercado Perimetral en <span class="text-brand-accent">Tampico y Altamira</span></h2></div>
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 reveal">
-      <div class="rounded-2xl overflow-hidden bg-brand-800 aspect-video relative"><img src="/img/cercado-perimetral-instalacion-malla-ciclonica-planta-industrial-altamira-jalmor.jpg" alt="Trabajador JALMOR Industrial instalando malla ciclónica en planta industrial Altamira Tamaulipas" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"><div class="absolute bottom-3 left-3"><span class="bg-brand-900/80 text-white text-xs px-3 py-1 rounded-full">Malla ciclónica · Altamira</span></div></div>
-      <div class="rounded-2xl overflow-hidden bg-brand-800 aspect-video relative"><img src="/img/cercado-perimetral-equipo-instalacion-nave-industrial-tampico-jalmor.jpg" alt="Equipo JALMOR Industrial instalando cerca perimetral y malla ciclónica nave industrial Tampico" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"><div class="absolute bottom-3 left-3"><span class="bg-brand-900/80 text-white text-xs px-3 py-1 rounded-full">Portón de acceso · Tampico</span></div></div>
-      <div class="rounded-2xl overflow-hidden bg-brand-800 aspect-video relative"><img src="/img/cercado-perimetral-malla-ciclonica-alambre-puas-industrial-tampico-jalmor.jpg" alt="Malla ciclónica industrial galvanizada con alambre de púas JALMOR Corredor Industrial Altamira" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"><div class="absolute bottom-3 left-3"><span class="bg-brand-900/80 text-white text-xs px-3 py-1 rounded-full">Barda + malla · Ciudad Madero</span></div></div>
+      <div class="rounded-2xl overflow-hidden bg-brand-800 aspect-video relative"><img src="/img/cercado-perimetral-instalacion-malla-ciclonica-planta-industrial-altamira-jalmor.webp" width="1600" height="1200" alt="Trabajador JALMOR Industrial instalando malla ciclónica en planta industrial Altamira Tamaulipas" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"><div class="absolute bottom-3 left-3"><span class="bg-brand-900/80 text-white text-xs px-3 py-1 rounded-full">Malla ciclónica · Altamira</span></div></div>
+      <div class="rounded-2xl overflow-hidden bg-brand-800 aspect-video relative"><img src="/img/cercado-perimetral-equipo-instalacion-nave-industrial-tampico-jalmor.webp" width="1600" height="1200" alt="Equipo JALMOR Industrial instalando cerca perimetral y malla ciclónica nave industrial Tampico" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"><div class="absolute bottom-3 left-3"><span class="bg-brand-900/80 text-white text-xs px-3 py-1 rounded-full">Portón de acceso · Tampico</span></div></div>
+      <div class="rounded-2xl overflow-hidden bg-brand-800 aspect-video relative"><img src="/img/cercado-perimetral-malla-ciclonica-alambre-puas-industrial-tampico-jalmor.webp" width="1600" height="1200" alt="Malla ciclónica industrial galvanizada con alambre de púas JALMOR Corredor Industrial Altamira" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"><div class="absolute bottom-3 left-3"><span class="bg-brand-900/80 text-white text-xs px-3 py-1 rounded-full">Barda + malla · Ciudad Madero</span></div></div>
     </div>
   </div>
 </section>
@@ -189,15 +203,65 @@
   </div>
 </section>
 
+<section class="bg-[#0A1628] border-t border-white/5 py-12" aria-labelledby="sobre-jalmor">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <h2 id="sobre-jalmor" class="font-display text-2xl font-bold uppercase text-white mb-4">Sobre JALMOR Industrial</h2>
+    <p class="text-gray-400 text-sm leading-relaxed mb-3">JALMOR Industrial instala cercado perimetral industrial en Tampico, Altamira y Ciudad Madero, Tamaulipas. Ejecuta proyectos de malla ciclónica galvanizada por inmersión Z275, barda de block con malla, portones corredizos y abatibles, concertina y alambre de púas, reparación de postes y tensores, y cercado para parques industriales. Especializado en materiales galvanizados para resistir la salinidad costera del Golfo de México. REPSE AR126391/2023 vigente. Teléfono: +52 833 117 5985. Sirve al Corredor Industrial de Altamira, Parque Industrial Altamira y zona conurbada del sur de Tamaulipas.</p>
+  </div>
+</section>
+
 <footer class="bg-brand-900 border-t border-white/10 pt-16 pb-8">
   <div class="max-w-6xl mx-auto px-4 sm:px-6">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-      <div class="lg:col-span-1"><div class="flex items-center gap-3 mb-4"><div class="accent-bar w-1 h-8 rounded-full"></div><div><span class="font-display text-2xl font-bold text-white">JALMOR</span><span class="font-display text-2xl font-bold text-brand-accent"> INDUSTRIAL</span></div></div><p class="text-gray-500 text-sm mb-4">Cercado perimetral, herrería y mantenimiento industrial en el sur de Tamaulipas.</p><div class="flex items-center gap-2 mb-2"><span class="text-brand-accent text-xs">📍</span><span class="text-gray-500 text-xs">Tampico · Ciudad Madero · Altamira</span></div><div class="flex items-center gap-2"><span class="text-brand-accent text-xs">🕐</span><span class="text-gray-500 text-xs">Lun–Vie 8:00–18:00 hrs</span></div></div>
-      <div><h4 class="font-display text-lg font-bold text-white uppercase mb-4">Servicios</h4><ul class="space-y-2"><li><a href="/cercado-perimetral-industrial-tampico" class="text-brand-accent text-sm font-semibold">Cercado Perimetral</a></li><li><a href="/herreria-canceleria-industrial-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Herrería Industrial</a></li><li><a href="/mantenimiento-industrial-altamira" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Mantenimiento Industrial</a></li><li><a href="/impermeabilizacion-naves-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Impermeabilización</a></li><li><a href="/paquetes-mantenimiento-anual" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Planes Anuales</a></li></ul></div>
-      <div><h4 class="font-display text-lg font-bold text-white uppercase mb-4">Zonas</h4><ul class="space-y-2"><li><a href="/corredor-industrial-altamira" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">✓ Corredor Industrial Altamira</a></li><li><a href="/mantenimiento-ciudad-madero" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">✓ Ciudad Madero</a></li><li><a href="/mantenimiento-industrial-altamira" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">✓ Tampico, Tamaulipas</a></li><li><a href="/blog/costo-impermeabilizacion-nave-industrial-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">📖 Blog Industrial</a></li></ul><div class="mt-4"><div class="inline-flex items-center gap-2 badge-repse px-3 py-1.5 rounded-full"><span class="text-brand-accent font-bold text-xs">✔ REPSE AR126391/2023</span></div></div></div>
-      <div><h4 class="font-display text-lg font-bold text-white uppercase mb-4">Contacto</h4><div class="space-y-3"><a href="https://wa.me/5218331175985" target="_blank" class="flex items-center gap-2 text-green-400 text-sm font-semibold">+52 833 117 5985</a><a href="tel:+528331175985" class="flex items-center gap-2 text-gray-400 text-sm">📞 833 117 5985</a><a href="mailto:jalmorindustrial@gmail.com" class="flex items-center gap-2 text-gray-400 text-sm">✉ jalmorindustrial@gmail.com</a></div></div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+      <div>
+        <div class="flex items-center gap-3 mb-4"><div class="accent-bar w-1 h-8 rounded-full"></div><div><span class="font-display text-2xl font-bold text-white">JALMOR</span><span class="font-display text-2xl font-bold text-brand-accent"> INDUSTRIAL</span></div></div>
+        <p class="text-gray-500 text-sm leading-relaxed mb-4">Mantenimiento industrial, servicios costa afuera y alimentación y hotelería para la industria del Golfo de México.</p>
+        <p class="text-gray-500 text-xs mb-4">📍 Tampico · Ciudad Madero · Altamira</p>
+        <p class="text-sm"><a href="/nosotros" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Nosotros</a> <span class="text-gray-700">·</span> <a href="/blog" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Blog</a></p>
+      </div>
+      <div>
+        <h2 class="font-display text-lg font-bold text-white uppercase mb-4">Mantenimiento</h2>
+        <ul class="space-y-2">
+          <li><a href="/mantenimiento-industrial-altamira" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Mantenimiento industrial</a></li>
+          <li><a href="/pintura-epoxica-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Pintura epóxica</a></li>
+          <li><a href="/impermeabilizacion-naves-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Impermeabilización de naves</a></li>
+          <li><a href="/obra-civil-industrial-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Obra civil industrial</a></li>
+          <li><a href="/senalizacion-industrial-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Señalización industrial</a></li>
+          <li><a href="/paquetes-mantenimiento-anual" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Planes anuales</a></li>
+          <li><a href="/corredor-industrial-altamira" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Corredor Industrial Altamira</a></li>
+          <li><a href="/mantenimiento-ciudad-madero" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Ciudad Madero</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-display text-lg font-bold text-white uppercase mb-4">Costa Afuera</h2>
+        <ul class="space-y-2">
+          <li><a href="/costa-afuera" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Servicios costa afuera</a></li>
+          <li><a href="/costa-afuera/buceo-industrial-inspeccion-submarina" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Buceo e inspección submarina</a></li>
+          <li><a href="/costa-afuera/proteccion-catodica-marina" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Protección catódica marina</a></li>
+          <li><a href="/costa-afuera/limpieza-presas-lodo-embarcaciones" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Presas de lodo y silos</a></li>
+          <li><a href="/costa-afuera/obras-maritimas-portuarias" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Obras marítimas</a></li>
+          <li><a href="/costa-afuera/mantenimiento-embarcaciones-a-flote" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Embarcaciones a flote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-display text-lg font-bold text-white uppercase mb-4">Alimentación</h2>
+        <ul class="space-y-2">
+          <li><a href="/alimentacion-y-hoteleria" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Alimentación y hotelería</a></li>
+          <li><a href="/alimentacion-y-hoteleria/comedor-industrial-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Comedor industrial</a></li>
+          <li><a href="/alimentacion-y-hoteleria/hospedaje-cuadrillas-altamira" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Hospedaje para cuadrillas</a></li>
+          <li><a href="/alimentacion-y-hoteleria/suministro-despensas-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Suministro de despensas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-display text-lg font-bold text-white uppercase mb-4">Contacto</h2>
+        <div class="space-y-3">
+          <a href="https://wa.me/5218331175985?text=Hola%20JALMOR%2C%20necesito%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener" class="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors text-sm font-semibold"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> +52 833 117 5985</a>
+          <a href="tel:+528331175985" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm">📞 833 117 5985</a>
+          <a href="mailto:jalmorindustrial@gmail.com" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm">✉ jalmorindustrial@gmail.com</a>
+        </div>
+      </div>
     </div>
-    <div class="border-t border-white/10 pt-8"><p class="text-gray-600 text-xs text-center">© 2025 JALMOR Industrial SA de CV · Cercado Perimetral Industrial en Tampico, Altamira y Ciudad Madero</p></div>
+    <div class="border-t border-white/10 pt-8"><p class="text-gray-600 text-xs">© 2026 JALMOR Industrial · Tampico, Ciudad Madero y Altamira, Tamaulipas.</p></div>
   </div>
 </footer>
 
@@ -207,7 +271,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué calibre de malla recomienda JALMOR para la zona costera de Altamira?","acceptedAnswer":{"@type":"Answer","text":"Malla calibre 9 (3.8 mm) con galvanizado por inmersión Z275 o superior. En ambiente salino del Golfo, esto da una vida útil de 15 a 25 años, frente a los 3-5 años del galvanizado electrolítico estándar."}},{"@type":"Question","name":"¿El presupuesto incluye el portón de acceso?","acceptedAnswer":{"@type":"Answer","text":"Sí. Los presupuestos de JALMOR incluyen los portones especificados en el levantamiento, fabricados en el mismo sistema galvanizado que el cercado."}},{"@type":"Question","name":"¿Cuál es la diferencia entre malla galvanizada y plastificada?","acceptedAnswer":{"@type":"Answer","text":"Para zona costera industrial, JALMOR recomienda galvanizada por inmersión sin PVC. El recubrimiento plástico puede agrietarse por UV y cuando lo hace, el agua acelera la corrosión entre el PVC y el metal."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.jalmorindustrial.com"},{"@type":"ListItem","position":2,"name":"Servicios","item":"https://www.jalmorindustrial.com/#servicios"},{"@type":"ListItem","position":3,"name":"Cercado Perimetral Industrial Tampico","item":"https://www.jalmorindustrial.com/cercado-perimetral-industrial-tampico"}]}</script>
 
-<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;" aria-hidden="true"><p>JALMOR Industrial instala cercado perimetral industrial en Tampico, Altamira y Ciudad Madero, Tamaulipas. Ejecuta proyectos de malla ciclónica galvanizada por inmersión Z275, barda de block con malla, portones corredizos y abatibles, concertina y alambre de púas, reparación de postes y tensores, y cercado para parques industriales. Especializado en materiales galvanizados para resistir la salinidad costera del Golfo de México. REPSE AR126391/2023 vigente. Teléfono: +52 833 117 5985. Sirve al Corredor Industrial de Altamira, Parque Industrial Altamira y zona conurbada del sur de Tamaulipas.</p></div>
+
 
 <script>
   const navbar=document.getElementById('navbar');window.addEventListener('scroll',()=>{navbar.classList.toggle('nav-scrolled',window.scrollY>60);});

@@ -5,17 +5,54 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, stale-while-revalidate=86400"
+        }
       ]
     },
     {
       "source": "/sitemap.xml",
       "headers": [
-        { "key": "Content-Type", "value": "application/xml" },
-        { "key": "Cache-Control", "value": "public, max-age=86400" }
+        {
+          "key": "Content-Type",
+          "value": "application/xml"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/img/pintura-epoxica-acabado-industrial-nave-tampico-jalmor.jpg",
+      "destination": "/img/obra-civil-riego-asfalto-vialidad-industrial-tampico-jalmor.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/img/pintura-epoxica-antiacido-planta-petroquimica-altamira-jalmor.jpg",
+      "destination": "/img/obra-civil-riego-asfalto-vialidad-industrial-tampico-jalmor.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/img/pintura-epoxica-piso-nave-industrial-tampico-altamira-jalmor.jpg",
+      "destination": "/img/obra-civil-puente-vehicular-construccion-tampico-jalmor.jpg",
+      "permanent": true
+    },
+    {
+      "source": "/img/pintura-epoxica-senalizacion-bodega-tamaulipas-jalmor.jpg",
+      "destination": "/img/senalizacion-instalacion-poste-ducto-campo-tamaulipas-jalmor.jpg",
+      "permanent": true
     }
   ]
 }

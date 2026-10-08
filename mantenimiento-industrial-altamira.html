@@ -14,7 +14,7 @@
   <meta property="og:title" content="Mantenimiento Industrial Altamira y Tampico | JALMOR Industrial">
   <meta property="og:description" content="Mantenimiento preventivo y correctivo para naves, plantas y talleres industriales en Altamira, Tampico y Madero. REPSE. Equipo propio. Cotiza gratis.">
   <meta property="og:type" content="website"><meta property="og:url" content="https://www.jalmorindustrial.com/mantenimiento-industrial-altamira">
-  <meta property="og:image" content="https://www.jalmorindustrial.com/img/corredor-industrial-altamira-nave-jalmor.jpg">
+  <meta property="og:image" content="https://www.jalmorindustrial.com/img/mantenimiento-estructura-metalica-altura-arnes-planta-industrial-altamira-jalmor.jpg">
   <meta name="theme-color" content="#0A1628"><meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
@@ -38,26 +38,39 @@
 </head>
 <body class="bg-[#0A1628] text-white antialiased">
 
-<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent" aria-label="Navegación principal">
   <div class="max-w-6xl mx-auto px-4 sm:px-6">
     <div class="flex items-center justify-between h-16">
-      <a href="/" class="flex items-center gap-3"><div class="accent-bar w-1 h-8 rounded-full"></div><span class="font-display text-2xl font-bold text-white">JALMOR</span><span class="font-display text-2xl font-bold text-[#F59E0B]"> INDUSTRIAL</span></a>
-      <div class="hidden md:flex items-center gap-8">
-        <a href="/" class="text-gray-300 hover:text-[#F59E0B] text-sm font-medium">Inicio</a>
-        <a href="/#servicios" class="text-gray-300 hover:text-[#F59E0B] text-sm font-medium">Servicios</a>
-        <a href="/nosotros" class="text-gray-300 hover:text-[#F59E0B] text-sm font-medium">Nosotros</a>
-        <a href="/#contacto" class="text-gray-300 hover:text-[#F59E0B] text-sm font-medium">Contacto</a>
-        <a href="https://wa.me/5218331175985?text=Hola%20JALMOR%2C%20necesito%20cotización%20de%20mantenimiento%20industrial%20en%20Altamira" target="_blank" class="cta-primary text-[#0A1628] font-semibold px-5 py-2 rounded text-sm uppercase">📲 Cotizar</a>
+      <a href="/" class="flex items-center gap-3">
+        <div class="accent-bar w-1 h-8 rounded-full"></div>
+        <div><span class="font-display text-2xl font-bold tracking-wide text-white">JALMOR</span><span class="font-display text-2xl font-bold tracking-wide text-brand-accent"> INDUSTRIAL</span></div>
+      </a>
+      <div class="hidden lg:flex items-center gap-5 xl:gap-8">
+        <a href="/#servicios" class="text-brand-accent text-sm font-semibold" aria-current="page">Mantenimiento</a>
+        <a href="/costa-afuera" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium">Costa Afuera</a>
+        <a href="/alimentacion-y-hoteleria" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium">Alimentación y Hotelería</a>
+        <a href="/#contacto" class="text-gray-300 hover:text-brand-accent transition-colors text-sm font-medium">Contacto</a>
+        <a href="https://wa.me/5218331175985?text=Hola%20JALMOR%2C%20necesito%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener" class="cta-primary text-brand-900 font-semibold px-5 py-2 rounded text-sm uppercase">📲 Cotizar</a>
       </div>
-      <button id="menu-toggle" class="md:hidden text-white p-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      <button id="menu-toggle" class="lg:hidden text-white p-2" aria-label="Abrir menú" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
     </div>
-    <div id="mobile-menu" class="md:hidden overflow-hidden max-h-0"><div class="pb-4 pt-2 space-y-2 border-t border-white/10"><a href="/" class="block py-2 text-gray-300 text-sm">Inicio</a><a href="https://wa.me/5218331175985?text=Hola%2C%20necesito%20cotización%20mantenimiento%20industrial" target="_blank" class="block cta-primary text-[#0A1628] font-bold px-5 py-3 rounded text-sm text-center uppercase mt-2">📲 Cotizar</a></div></div>
+    <div id="mobile-menu" style="max-height:0;overflow:hidden;" class="lg:hidden">
+      <div class="pb-4 pt-2 space-y-2 border-t border-white/10">
+        <a href="/#servicios" class="block py-2 text-sm text-brand-accent font-semibold">Mantenimiento</a>
+        <a href="/costa-afuera" class="block py-2 text-sm text-gray-300">Costa Afuera</a>
+        <a href="/alimentacion-y-hoteleria" class="block py-2 text-sm text-gray-300">Alimentación y Hotelería</a>
+        <a href="/#contacto" class="block py-2 text-gray-300 text-sm">Contacto</a>
+        <a href="https://wa.me/5218331175985?text=Hola%20JALMOR%2C%20necesito%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener" class="block cta-primary text-brand-900 font-bold px-5 py-3 rounded text-sm text-center uppercase mt-2">📲 Cotizar por WhatsApp</a>
+      </div>
+    </div>
   </div>
 </nav>
 
 <section class="relative min-h-[85vh] flex items-center overflow-hidden bg-[#0A1628]">
   <div class="absolute inset-0">
-    <img src="/img/mantenimiento-interior-nave-industrial-tampico-altamira-jalmor.jpg" alt="Técnico de JALMOR Industrial realizando mantenimiento correctivo en interior de nave industrial en Tampico — vigas estructurales y grúa aérea" class="w-full h-full object-cover object-center opacity-70" loading="eager">
+    <img src="/img/mantenimiento-interior-nave-industrial-tampico-altamira-jalmor.webp" width="1600" height="1200" alt="Técnico de JALMOR Industrial realizando mantenimiento correctivo en interior de nave industrial en Tampico — vigas estructurales y grúa aérea" class="w-full h-full object-cover object-center opacity-70" loading="eager">
     <div class="absolute inset-0 hero-overlay"></div>
   </div>
   <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-32 lg:py-24">
@@ -94,8 +107,8 @@
         </div>
       </div>
       <div class="reveal" style="transition-delay:0.15s">
-        <div class="rounded-2xl overflow-hidden mb-3"><img src="/img/mantenimiento-trabajo-altura-pluma-elevadora-nave-tampico-jalmor.jpg" alt="Equipo técnico mantenimiento industrial Altamira Tampico JALMOR" class="w-full h-64 object-cover" loading="lazy"></div>
-        <div class="rounded-2xl overflow-hidden"><img src="/img/gestion-proyectos-industriales-equipo-maquinaria-altamira-jalmor.jpg" alt="Proyecto mantenimiento nave industrial Tamaulipas" class="w-full h-40 object-cover" loading="lazy"></div>
+        <div class="rounded-2xl overflow-hidden mb-3"><img src="/img/mantenimiento-trabajo-altura-pluma-elevadora-nave-tampico-jalmor.webp" width="1600" height="2844" alt="Equipo técnico mantenimiento industrial Altamira Tampico JALMOR" class="w-full h-64 object-cover" loading="lazy"></div>
+        <div class="rounded-2xl overflow-hidden"><img src="/img/gestion-proyectos-industriales-equipo-maquinaria-altamira-jalmor.webp" width="1600" height="900" alt="Proyecto mantenimiento nave industrial Tamaulipas" class="w-full h-40 object-cover" loading="lazy"></div>
       </div>
     </div>
   </div>
@@ -113,7 +126,7 @@
       <div class="card bg-[#0F2040] rounded-xl p-6 reveal" style="transition-delay:0.15s"><div class="text-3xl mb-4">🏗️</div><h3 class="font-display text-xl font-bold text-white uppercase mb-2">Reparación Estructural</h3><p class="text-gray-400 text-sm">Corrección de daños en estructura metálica, columnas, trabes y cubiertas de naves industriales. Soldadura y refuerzo estructural.</p></div>
       <div class="card bg-[#0F2040] rounded-xl p-6 reveal" style="transition-delay:0.08s"><div class="text-3xl mb-4">🎨</div><h3 class="font-display text-xl font-bold text-white uppercase mb-2">Pintura Industrial</h3><p class="text-gray-400 text-sm">Aplicación de pintura anticorrosiva, epóxica y acabados industriales en estructura, fachada y pisos de naves en Tamaulipas.</p></div>
       <div class="card bg-[#0F2040] rounded-xl p-6 reveal" style="transition-delay:0.15s"><div class="text-3xl mb-4">📋</div><h3 class="font-display text-xl font-bold text-white uppercase mb-2">Planes de Mantenimiento</h3><p class="text-gray-400 text-sm">Programas anuales personalizados con cronograma, presupuesto y reportes técnicos por proyecto. Contrato de mantenimiento continuo.</p></div>
-      <div class="card bg-[#0F2040] rounded-xl p-6 reveal" style="transition-delay:0.22s"><div class="text-3xl mb-4">🚨</div><h3 class="font-display text-xl font-bold text-white uppercase mb-2">Urgencias 24/7</h3><p class="text-gray-400 text-sm">Atención de emergencias en Parque Industrial Altamira, Tampico y Madero. Respuesta rápida para fallas que afectan la operación.</p></div>
+      <div class="card bg-[#0F2040] rounded-xl p-6 reveal" style="transition-delay:0.22s"><div class="text-3xl mb-4">🚨</div><h3 class="font-display text-xl font-bold text-white uppercase mb-2">Urgencias con prioridad</h3><p class="text-gray-400 text-sm">Atención de emergencias en Parque Industrial Altamira, Tampico y Madero. Respuesta rápida para fallas que afectan la operación.</p></div>
     </div>
   </div>
 </section>
@@ -125,7 +138,7 @@
       <div class="text-center reveal"><div class="w-14 h-14 rounded-full bg-[#F59E0B] flex items-center justify-center mx-auto font-display text-2xl font-bold text-[#0A1628] mb-4">01</div><h3 class="font-display text-lg font-bold text-white uppercase mb-2">Diagnóstico</h3><p class="text-gray-400 text-sm">Inspección técnica gratuita de tu nave en Altamira o Tampico. Identificación de prioridades de mantenimiento.</p></div>
       <div class="text-center reveal" style="transition-delay:0.1s"><div class="w-14 h-14 rounded-full bg-[#0F2040] border-2 border-[#F59E0B]/50 flex items-center justify-center mx-auto font-display text-2xl font-bold text-[#F59E0B] mb-4">02</div><h3 class="font-display text-lg font-bold text-white uppercase mb-2">Propuesta</h3><p class="text-gray-400 text-sm">Plan de trabajo detallado con alcance, materiales, cronograma y costo total. Sin sorpresas.</p></div>
       <div class="text-center reveal" style="transition-delay:0.2s"><div class="w-14 h-14 rounded-full bg-[#0F2040] border-2 border-[#F59E0B]/50 flex items-center justify-center mx-auto font-display text-2xl font-bold text-[#F59E0B] mb-4">03</div><h3 class="font-display text-lg font-bold text-white uppercase mb-2">Ejecución</h3><p class="text-gray-400 text-sm">Personal técnico certificado con maquinaria y equipo propio. Supervisión constante y reporte de avance.</p></div>
-      <div class="text-center reveal" style="transition-delay:0.3s"><div class="w-14 h-14 rounded-full bg-[#0F2040] border-2 border-[#F59E0B]/50 flex items-center justify-center mx-auto font-display text-2xl font-bold text-[#F59E0B] mb-4">04</div><h3 class="font-display text-lg font-bold text-white uppercase mb-2">Entrega</h3><p class="text-gray-400 text-sm">Cierre con reporte técnico fotográfico, garantía por escrito y documentación REPSE para tu expediente.</p></div>
+      <div class="text-center reveal" style="transition-delay:0.3s"><div class="w-14 h-14 rounded-full bg-[#0F2040] border-2 border-[#F59E0B]/50 flex items-center justify-center mx-auto font-display text-2xl font-bold text-[#F59E0B] mb-4">04</div><h3 class="font-display text-lg font-bold text-white uppercase mb-2">Entrega</h3><p class="text-gray-400 text-sm">Cierre con reporte técnico fotográfico, la garantía pactada en la cotización y documentación REPSE para tu expediente.</p></div>
     </div>
   </div>
 </section>
@@ -134,20 +147,20 @@
   <div class="max-w-6xl mx-auto px-4 sm:px-6">
     <div class="mb-10 reveal"><div class="flex items-center gap-3 mb-3"><div class="accent-bar w-8 h-1 rounded-full"></div><span class="text-[#F59E0B] text-sm font-semibold uppercase tracking-widest">Proyectos reales</span></div><h2 class="font-display text-4xl font-bold uppercase text-white">Mantenimiento Industrial en <span class="text-[#F59E0B]">Altamira y Tampico</span></h2></div>
     <div class="columns-2 md:columns-3 gap-3 space-y-3 reveal">
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-slate-800"><img src="/img/mantenimiento-correctivo-instalacion-equipo-industrial-altura-tampico-jalmor.jpg" alt="Técnicos JALMOR instalando equipo industrial en altura arnés seguridad planta Tampico" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-slate-800"><img src="/img/mantenimiento-supervision-planta-industrial-tuberias-altamira-jalmor.jpg" alt="Mantenimiento preventivo planta industrial Tampico" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-slate-800"><img src="/img/mantenimiento-estructura-metalica-altura-arnes-planta-industrial-altamira-jalmor.jpg" alt="Técnico JALMOR con arnés trabajando en estructura metálica elevada planta industrial Altamira" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-slate-800"><img src="/img/mantenimiento-estructura-metalica-industrial-pintura-plataforma-altamira-jalmor.jpg" alt="Estructura metálica con pintura anticorrosiva y plataforma mantenimiento JALMOR Altamira" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-slate-800"><img src="/img/mantenimiento-correctivo-instalacion-equipo-industrial-altura-tampico-jalmor.jpg" alt="Técnicos JALMOR instalando equipo industrial en altura arnés seguridad planta Tampico" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/escaleras-aluminio-mantenimiento-altura-tampico.jpg" alt="Escaleras de aluminio para mantenimiento en altura industrial Tampico JALMOR" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/herramientas-mantenimiento-industrial-tampico.jpg" alt="Herramientas de mantenimiento industrial JALMOR Tampico Altamira" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy">
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/mantenimiento-supervision-nave-industrial-equipo-jalmor-tampico.jpg" alt="Equipo JALMOR supervisando nave industrial Tampico Altamira" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/mantenimiento-tuberia-industrial-altura-andamio-tampico-jalmor.jpg" alt="Mantenimiento tubería industrial altura andamio Tampico JALMOR" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/mantenimiento-industrial-trabajador-seguridad-nave-tampico-jalmor.jpg" alt="Trabajador JALMOR mantenimiento industrial nave Tampico" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
+      <div class="break-inside-avoid rounded-xl overflow-hidden bg-slate-800"><img src="/img/mantenimiento-correctivo-instalacion-equipo-industrial-altura-tampico-jalmor.webp" width="1600" height="2133" alt="Técnicos JALMOR instalando equipo industrial en altura arnés seguridad planta Tampico" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
+      <div class="break-inside-avoid rounded-xl overflow-hidden bg-slate-800"><img src="/img/mantenimiento-supervision-planta-industrial-tuberias-altamira-jalmor.webp" width="1200" height="1600" alt="Mantenimiento preventivo planta industrial Tampico" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
+      <div class="break-inside-avoid rounded-xl overflow-hidden bg-slate-800"><img src="/img/mantenimiento-estructura-metalica-altura-arnes-planta-industrial-altamira-jalmor.webp" width="1200" height="1600" alt="Técnico JALMOR con arnés trabajando en estructura metálica elevada planta industrial Altamira" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
+      <div class="break-inside-avoid rounded-xl overflow-hidden bg-slate-800"><img src="/img/mantenimiento-estructura-metalica-industrial-pintura-plataforma-altamira-jalmor.webp" width="286" height="439" alt="Estructura metálica con pintura anticorrosiva y plataforma mantenimiento JALMOR Altamira" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
+      <div class="break-inside-avoid rounded-xl overflow-hidden bg-slate-800"><img src="/img/mantenimiento-correctivo-instalacion-equipo-industrial-altura-tampico-jalmor.webp" width="1600" height="2133" alt="Técnicos JALMOR instalando equipo industrial en altura arnés seguridad planta Tampico" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
+      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/escaleras-aluminio-mantenimiento-altura-tampico.webp" width="1117" height="629" alt="Escaleras de aluminio para mantenimiento en altura industrial Tampico JALMOR" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
+      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/herramientas-mantenimiento-industrial-tampico.webp" width="720" height="563" alt="Herramientas de mantenimiento industrial JALMOR Tampico Altamira" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy">
+      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/mantenimiento-supervision-nave-industrial-equipo-jalmor-tampico.webp" width="1536" height="1024" alt="Equipo JALMOR supervisando nave industrial Tampico Altamira" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
+      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/mantenimiento-tuberia-industrial-altura-andamio-tampico-jalmor.webp" width="1024" height="1536" alt="Mantenimiento tubería industrial altura andamio Tampico JALMOR" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
+      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/mantenimiento-industrial-trabajador-seguridad-nave-tampico-jalmor.webp" width="1536" height="1024" alt="Trabajador JALMOR mantenimiento industrial nave Tampico" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
     
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/mantenimiento-preventivo-inspeccion-maquinaria-nave-industrial-tampico-jalmor.jpg" alt="Técnico JALMOR inspeccionando maquinaria nave industrial Tampico con checklist" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
+      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/mantenimiento-preventivo-inspeccion-maquinaria-nave-industrial-tampico-jalmor.webp" width="1024" height="1024" alt="Técnico JALMOR inspeccionando maquinaria nave industrial Tampico con checklist" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
     
-      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/mantenimiento-preventivo-revision-planos-maquinaria-altamira-jalmor.jpg" alt="Técnico JALMOR revisando planos de mantenimiento sobre maquinaria industrial Altamira" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
+      <div class="break-inside-avoid rounded-xl overflow-hidden bg-brand-800 border border-white/8"><img src="/img/mantenimiento-preventivo-revision-planos-maquinaria-altamira-jalmor.webp" width="1024" height="1024" alt="Técnico JALMOR revisando planos de mantenimiento sobre maquinaria industrial Altamira" class="w-full hover:scale-105 transition-transform duration-300" loading="lazy"></div>
     </div>
     </div>
   </div>
@@ -212,10 +225,65 @@
     </div>
   </div>
 </section>
-<footer class="bg-[#0F2040] border-t border-white/10 py-10">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-    <div><div class="flex items-center gap-3 mb-2"><div class="accent-bar w-1 h-6 rounded-full"></div><span class="font-display text-xl font-bold text-white">JALMOR</span><span class="font-display text-xl font-bold text-[#F59E0B]"> INDUSTRIAL</span></div><p class="text-gray-500 text-xs">© 2025 JALMOR Industrial · Mantenimiento Industrial en Altamira, Tampico y Ciudad Madero</p></div>
-    <div class="flex flex-wrap gap-6 text-sm"><a href="/" class="text-gray-400 hover:text-[#F59E0B]">Inicio</a><a href="/nosotros" class="text-gray-400 hover:text-[#F59E0B]">Nosotros</a><a href="/impermeabilizacion-naves-tampico" class="text-gray-400 hover:text-[#F59E0B]">Impermeabilización</a><a href="/pintura-epoxica-tampico" class="text-gray-400 hover:text-[#F59E0B]">Pintura Epóxica</a><a href="/obra-civil-industrial-tampico" class="text-gray-400 hover:text-[#F59E0B]">Obra Civil</a></div>
+<section class="bg-[#0A1628] border-t border-white/5 py-12" aria-labelledby="sobre-jalmor">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <h2 id="sobre-jalmor" class="font-display text-2xl font-bold uppercase text-white mb-4">Sobre JALMOR Industrial</h2>
+    <p class="text-gray-400 text-sm leading-relaxed mb-3">JALMOR Industrial realiza mantenimiento industrial preventivo y correctivo para naves, plantas y talleres en Altamira, Tampico y Ciudad Madero, Tamaulipas. Ofrece programas anuales con precio fijo, inspección técnica, reparación estructural y reporte técnico mensual. Opera con REPSE vigente AR126391/2023, personal certificado y maquinaria propia. Atiende urgencias con respuesta en menos de 2 horas. Clientes: Dynasol, Silkimya. Teléfono: +52 833 117 5985.</p>
+  </div>
+</section>
+
+<footer class="bg-brand-900 border-t border-white/10 pt-16 pb-8">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+      <div>
+        <div class="flex items-center gap-3 mb-4"><div class="accent-bar w-1 h-8 rounded-full"></div><div><span class="font-display text-2xl font-bold text-white">JALMOR</span><span class="font-display text-2xl font-bold text-brand-accent"> INDUSTRIAL</span></div></div>
+        <p class="text-gray-500 text-sm leading-relaxed mb-4">Mantenimiento industrial, servicios costa afuera y alimentación y hotelería para la industria del Golfo de México.</p>
+        <p class="text-gray-500 text-xs mb-4">📍 Tampico · Ciudad Madero · Altamira</p>
+        <p class="text-sm"><a href="/nosotros" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Nosotros</a> <span class="text-gray-700">·</span> <a href="/blog" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Blog</a></p>
+      </div>
+      <div>
+        <h2 class="font-display text-lg font-bold text-white uppercase mb-4">Mantenimiento</h2>
+        <ul class="space-y-2">
+          <li><a href="/mantenimiento-industrial-altamira" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Mantenimiento industrial</a></li>
+          <li><a href="/pintura-epoxica-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Pintura epóxica</a></li>
+          <li><a href="/impermeabilizacion-naves-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Impermeabilización de naves</a></li>
+          <li><a href="/obra-civil-industrial-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Obra civil industrial</a></li>
+          <li><a href="/senalizacion-industrial-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Señalización industrial</a></li>
+          <li><a href="/paquetes-mantenimiento-anual" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Planes anuales</a></li>
+          <li><a href="/corredor-industrial-altamira" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Corredor Industrial Altamira</a></li>
+          <li><a href="/mantenimiento-ciudad-madero" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Ciudad Madero</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-display text-lg font-bold text-white uppercase mb-4">Costa Afuera</h2>
+        <ul class="space-y-2">
+          <li><a href="/costa-afuera" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Servicios costa afuera</a></li>
+          <li><a href="/costa-afuera/buceo-industrial-inspeccion-submarina" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Buceo e inspección submarina</a></li>
+          <li><a href="/costa-afuera/proteccion-catodica-marina" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Protección catódica marina</a></li>
+          <li><a href="/costa-afuera/limpieza-presas-lodo-embarcaciones" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Presas de lodo y silos</a></li>
+          <li><a href="/costa-afuera/obras-maritimas-portuarias" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Obras marítimas</a></li>
+          <li><a href="/costa-afuera/mantenimiento-embarcaciones-a-flote" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Embarcaciones a flote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-display text-lg font-bold text-white uppercase mb-4">Alimentación</h2>
+        <ul class="space-y-2">
+          <li><a href="/alimentacion-y-hoteleria" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Alimentación y hotelería</a></li>
+          <li><a href="/alimentacion-y-hoteleria/comedor-industrial-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Comedor industrial</a></li>
+          <li><a href="/alimentacion-y-hoteleria/hospedaje-cuadrillas-altamira" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Hospedaje para cuadrillas</a></li>
+          <li><a href="/alimentacion-y-hoteleria/suministro-despensas-tampico" class="text-gray-500 hover:text-brand-accent text-sm transition-colors">Suministro de despensas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-display text-lg font-bold text-white uppercase mb-4">Contacto</h2>
+        <div class="space-y-3">
+          <a href="https://wa.me/5218331175985?text=Hola%20JALMOR%2C%20necesito%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener" class="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors text-sm font-semibold"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> +52 833 117 5985</a>
+          <a href="tel:+528331175985" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm">📞 833 117 5985</a>
+          <a href="mailto:jalmorindustrial@gmail.com" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm">✉ jalmorindustrial@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-8"><p class="text-gray-600 text-xs">© 2026 JALMOR Industrial · Tampico, Ciudad Madero y Altamira, Tamaulipas.</p></div>
   </div>
 </footer>
 
@@ -238,8 +306,6 @@
 </script>
 
 <!-- ENTITY BLOCK LLM / AI-SEO -->
-<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;" aria-hidden="true">
-  <p>JALMOR Industrial realiza mantenimiento industrial preventivo y correctivo para naves, plantas y talleres en Altamira, Tampico y Ciudad Madero, Tamaulipas. Ofrece programas anuales con precio fijo, inspección técnica, reparación estructural y reporte técnico mensual. Opera con REPSE vigente AR126391/2023, personal certificado y maquinaria propia. Atiende urgencias con respuesta en menos de 2 horas. Clientes: Dynasol, Silkimya. Teléfono: +52 833 117 5985.</p>
-</div>
+
 </body>
 </html>
