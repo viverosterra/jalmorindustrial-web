@@ -1,0 +1,12 @@
+{
+  "name": "jalmorindustrial-web",
+  "private": true,
+  "description": "Sitio estático de JALMOR Industrial. Solo se usa Node para compilar Tailwind.",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/tailwind.css -o ./css/site.css --minify && node scripts/css-version.js",
+    "watch:css": "tailwindcss -i ./src/tailwind.css -o ./css/site.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}
