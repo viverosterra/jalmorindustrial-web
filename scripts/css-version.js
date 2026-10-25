@@ -4,7 +4,7 @@ const path = require('path');
 const crypto = require('crypto');
 
 const ROOT = path.join(__dirname, '..');
-const DIRS = ['.', 'blog', 'costa-afuera', 'alimentacion-y-hoteleria'];
+const DIRS = ['.', 'blog', 'costa-afuera', 'alimentacion-y-hoteleria', 'en'];
 const LINK_RE = /href="\/css\/site\.css(\?v=[0-9a-f]+)?"/g;
 
 const css = fs.readFileSync(path.join(ROOT, 'css/site.css'));

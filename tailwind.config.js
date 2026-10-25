@@ -1,6 +1,6 @@
 /** Configuración única para todo el sitio (antes vivía repetida en cada página con el CDN). */
 module.exports = {
-  content: ['./*.html', './blog/*.html', './costa-afuera/*.html', './alimentacion-y-hoteleria/*.html'],
+  content: ['./*.html', './blog/*.html', './costa-afuera/*.html', './alimentacion-y-hoteleria/*.html', './en/*.html'],
   theme: {
     extend: {
       colors: {
